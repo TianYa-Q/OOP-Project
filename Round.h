@@ -6,11 +6,11 @@
 class Round
 {
 public:
-    Player players[2];
+    Player *players[2];
     int move[2];
 
 public:
-    Round(Player players, int move);
+    Round(Player *players[2], int move[2]);
     ~Round();
 };
 

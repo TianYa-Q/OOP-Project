@@ -1,14 +1,16 @@
 #ifndef PERSON
 #define PERSON
 
-class Person
-{
-private:
-    /* data */
-public:
-    Person(/* args */);
+#include <string>
 
-    void move();
+#include "Player.h"
+
+class Person : public Player
+{
+public:
+    Person(string name);
+
+    int move();
 
     ~Person();
 };

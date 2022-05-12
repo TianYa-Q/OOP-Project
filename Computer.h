@@ -1,14 +1,16 @@
 #ifndef COMPUTER
 #define COMPUTER
 
-class Computer
+#include "Player.h"
+
+class Computer : public Player
 {
 private:
     /* data */
 public:
-    Computer(/* args */);
+    Computer();
 
-    void move();
+    int move();
 
     ~Computer();
 };

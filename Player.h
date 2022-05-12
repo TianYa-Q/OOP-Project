@@ -3,6 +3,8 @@
 
 #include <string>
 
+using namespace std;
+
 class Player
 {
 public:
@@ -10,7 +12,8 @@ public:
     int type;
 
 public:
-    Player(/* args */);
+    Player(string name, int type);
+    virtual int move() = 0;
     ~Player();
 };
 

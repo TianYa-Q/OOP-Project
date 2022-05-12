@@ -8,19 +8,20 @@
 class GameTable
 {
 public:
-    Player players[2];
+    // 0:Computer 1:Person
+    Player *players[2];
     Round *rounds;
     int roundNum;
     int Points;
 
 public:
-    GameTable(/* args */);
+    GameTable();
 
-    Message addPlayer(Player newPlayer);
+    Message addPlayer(Player *newPlayer);
     Message removePlayer(int id);
     std::string showPlayer();
-    std::string showPlayer(Player player);
-    void newGame(); // ask players in this table to choose one move.
+    std::string showPlayer(Player *player);
+    void newGame();
     Round getLastFiveRounds();
 
     ~GameTable();
