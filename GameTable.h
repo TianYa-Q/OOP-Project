@@ -22,6 +22,7 @@ public:
     std::string showPlayer();
     std::string showPlayer(Player *player);
     void newGame();
+    void checkRes(int computerMove, int personMove); // check win or not
     Round getLastFiveRounds();
 
     ~GameTable();
