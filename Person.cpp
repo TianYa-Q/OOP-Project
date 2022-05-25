@@ -29,4 +29,5 @@ int Person::move()
 
 Person::~Person()
 {
+    // cout << "delete Person" << endl;
 }

@@ -118,5 +118,6 @@ void GameTable::checkRes(int computerMove, int personMove)
 
 GameTable::~GameTable()
 {
-    delete[] players;
+    delete players[0];
+    delete players[1];
 }

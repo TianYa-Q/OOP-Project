@@ -14,7 +14,7 @@ public:
 public:
     Player(string name, int type);
     virtual int move() = 0;
-    ~Player();
+    virtual ~Player();
 };
 
 #endif /* PLAYER */
